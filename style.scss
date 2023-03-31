@@ -1,21 +1,7 @@
-@mixin styling{
-    display: flex;
-    font-size: 20px;
-    color: rgb(43, 22, 230);
-}
-@mixin para{
-    color:rgb(87, 17, 122);
-    font-family: Georgia;
-}
-$var-weight: bold;
-$var-color:rgb(87, 17, 122);
+@import "variables.scss";
+@import "mixin.scss";
+@import "extend.scss";
 
-.button{
-    color:white;
-    background-color: rgb(107, 231, 204);
-    border: 2px solid black;
-    padding: 10px 20px;
-}
 
 .menu-pg{ 
     background-image: url(./images.jpeg);
@@ -24,18 +10,18 @@ $var-color:rgb(87, 17, 122);
     background-position: right;
     height: 50vh;
     color: #faf7f7;
-    display: flex;
-    justify-content: center;
+    display:$var-dsp;
+    justify-content: $var-jst-cnt;
     align-items: center;
-    font-family: 'Cinzel',Georgia, serif;
-    font-weight: bolder;
+    font-family: $var-fnt-fam;
+    font-weight: $var-weight;
     text-align: left;
-    border: 5px solid rgb(83, 75, 192);
+    border: $var-border;
     border-radius: 5px;
 
 }
 h1{
-    display: flex;
+    display:$var-dsp;
     font-family: serif;
     font-weight: bold;
     font-size: 100px;
@@ -43,24 +29,24 @@ h1{
 nav{
 
     a{
-        display: flex;
+        display:$var-dsp;
         font-size: 20px;
         font-family: system-ui;
         font-weight: $var-weight;
-        justify-content: center
+        justify-content:$var-jst-cnt;
             
     }
 button{
     @extend .button;
     &:hover{
-        background-color: grey
+        background-color: $var-bg;
     }    
 }
 }
 p{
     @include styling;
     padding:5px;
-    font-family:Georgia;
+    font-family:$var-fnt-fam;
 }
 .intro-p{
         @include para;
@@ -86,17 +72,22 @@ p{
     }
 ul{
     color: rgb(87, 17, 122);
-    font-size: large;
-    font-weight: bold;
+    font-size: $var-size;
+    font-weight: $var-weight;
     
 }
 .down{
-    font-weight:bold ;
+    font-weight:$var-weight ;
     font-size: 30px;
 }   
 button{
     @extend .button;
     &:hover{
-        background-color: grey
+        background-color:$var-bg;
     }   
+}
+div{
+   p{
+    @include para;
+   }
 }

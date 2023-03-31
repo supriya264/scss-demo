@@ -1,0 +1,9 @@
+@mixin styling{
+    display: flex;
+    font-size: 20px;
+    color: rgb(43, 22, 230);
+}
+@mixin para{
+    color:rgb(87, 17, 122);
+    font-family: Georgia;
+}

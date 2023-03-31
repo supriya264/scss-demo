@@ -1,0 +1,102 @@
+@mixin styling{
+    display: flex;
+    font-size: 20px;
+    color: rgb(43, 22, 230);
+}
+@mixin para{
+    color:rgb(87, 17, 122);
+    font-family: Georgia;
+}
+$var-weight: bold;
+$var-color:rgb(87, 17, 122);
+
+.button{
+    color:white;
+    background-color: rgb(107, 231, 204);
+    border: 2px solid black;
+    padding: 10px 20px;
+}
+
+.menu-pg{ 
+    background-image: url(./images.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: right;
+    height: 50vh;
+    color: #faf7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cinzel',Georgia, serif;
+    font-weight: bolder;
+    text-align: left;
+    border: 5px solid rgb(83, 75, 192);
+    border-radius: 5px;
+
+}
+h1{
+    display: flex;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 100px;
+}
+nav{
+
+    a{
+        display: flex;
+        font-size: 20px;
+        font-family: system-ui;
+        font-weight: $var-weight;
+        justify-content: center
+            
+    }
+button{
+    @extend .button;
+    &:hover{
+        background-color: grey
+    }    
+}
+}
+p{
+    @include styling;
+    padding:5px;
+    font-family:Georgia;
+}
+.intro-p{
+        @include para;
+    }
+    .mynts-p{
+        @include para;
+    }
+    .see-p{
+        @include para;
+
+    }
+    .refer{
+        @include para;
+
+    }
+    .contest{
+        @include para;
+       
+    }
+    .support{
+        @include para;
+        
+    }
+ul{
+    color: rgb(87, 17, 122);
+    font-size: large;
+    font-weight: bold;
+    
+}
+.down{
+    font-weight:bold ;
+    font-size: 30px;
+}   
+button{
+    @extend .button;
+    &:hover{
+        background-color: grey
+    }   
+}

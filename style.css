@@ -1,0 +1,94 @@
+.button, button, nav button {
+  color: white;
+  background-color: rgb(107, 231, 204);
+  border: 2px solid black;
+  padding: 10px 20px;
+}
+
+.menu-pg {
+  background-image: url(./images.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 50vh;
+  color: #faf7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cinzel", Georgia, serif;
+  font-weight: bolder;
+  text-align: left;
+  border: 5px solid rgb(83, 75, 192);
+  border-radius: 5px;
+}
+
+h1 {
+  display: flex;
+  font-family: serif;
+  font-weight: bold;
+  font-size: 100px;
+}
+
+nav a {
+  display: flex;
+  font-size: 20px;
+  font-family: system-ui;
+  font-weight: bold;
+  justify-content: center;
+}
+nav button:hover {
+  background-color: grey;
+}
+
+p {
+  display: flex;
+  font-size: 20px;
+  color: rgb(43, 22, 230);
+  padding: 5px;
+  font-family: Georgia;
+}
+
+.intro-p {
+  color: rgb(87, 17, 122);
+  font-family: Georgia;
+}
+
+.mynts-p {
+  color: rgb(87, 17, 122);
+  font-family: Georgia;
+}
+
+.see-p {
+  color: rgb(87, 17, 122);
+  font-family: Georgia;
+}
+
+.refer {
+  color: rgb(87, 17, 122);
+  font-family: Georgia;
+}
+
+.contest {
+  color: rgb(87, 17, 122);
+  font-family: Georgia;
+}
+
+.support {
+  color: rgb(87, 17, 122);
+  font-family: Georgia;
+}
+
+ul {
+  color: rgb(87, 17, 122);
+  font-size: large;
+  font-weight: bold;
+}
+
+.down {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+button:hover {
+  background-color: grey;
+}/*# sourceMappingURL=style.css.map */
